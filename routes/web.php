@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::prefix('admin')->group(function (){
+Route::prefix('admin')->middleware('checklogin')->group(function (){
     Route::get('index','AdminController@index');
     Route::get('left','AdminController@left');
     Route::get('head','AdminController@head');
@@ -39,7 +39,6 @@ Route::prefix('news')->group(function(){
 });
 =======
 
-
 Route::prefix('link')->group(function(){
     Route::get('showadd','LinkController@showadd');
     Route::post('do_add','LinkController@do_add');
@@ -61,4 +60,21 @@ Route::prefix('cate')->group(function(){
   
    });
 >>>>>>> 561e806ce6b83f8a23356ef9c9901399a7af7a19
+
+
+Route::prefix('users')->group(function (){
+	Route::get('login','UsersController@login');
+	Route::post('do_login','UsersController@do_login');
+	Route::get('logout','UsersController@logout');
+});
+Route::prefix('users')->middleware('checklogin')->group(function(){
+Route::get('create','GuanliyuanController@create');
+Route::post('store','GuanliyuanController@store');
+Route::get('/','GuanliyuanController@index');
+Route::get('edit/{id}','GuanliyuanController@edit');
+Route::post('update/{id}','GuanliyuanController@update');
+Route::get('delete/{id}','GuanliyuanController@destroy');
+//Route::get('show/{id}','GuanliyuanController@show');
+
+});
 
