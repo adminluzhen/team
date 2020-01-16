@@ -22,6 +22,7 @@ Route::prefix('admin')->group(function (){
     Route::get('main','AdminController@main');
 });
 
+<<<<<<< HEAD
 
 Route::prefix('link')->group(function(){
     Route::get('showadd','LinkController@showadd');
@@ -31,3 +32,16 @@ Route::prefix('link')->group(function(){
     Route::get('update','LinkController@update');
     Route::post('do_update','LinkController@do_update');
 });
+=======
+Route::prefix('cate')->group(function(){
+
+   Route::get('create','cateController@create');
+   Route::post('/store','cateController@store');
+   Route::get('/','cateController@index');
+   Route::get('destroy/{id}','cateController@destroy');
+
+   Route::get('edit/{id}','cateController@edit');
+   Route::post('update/{id}','cateController@update');
+  
+   });
+>>>>>>> zhang
