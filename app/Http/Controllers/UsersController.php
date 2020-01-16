@@ -20,7 +20,7 @@ class UsersController extends Controller
         ],[
 
             'admin_name.required'=>"管理员名称必填",
-            'admin_name.unique'=>"管理员名称已存在",
+            //'admin_name.unique'=>"管理员名称已存在",
             //'is_show.required'=>'是否显示必填!'
             'admin_pwd.required'=>"密码必填"
         ]);
