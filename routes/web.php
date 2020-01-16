@@ -61,3 +61,17 @@ Route::get('delete/{id}','GuanliyuanController@destroy');
 
 });
 
+
+//新闻
+Route::prefix('news')->group(function(){
+    Route::get('create','NewsController@create');
+    Route::post('store','NewsController@store');
+
+    Route::get('/','NewsController@index');
+    Route::get('/edit/{id}','NewsController@edit');
+    Route::post('/update/{id}','NewsController@update');
+    Route::get('/del/{id}','NewsController@destroy');
+//    Route::get('checkOnly','NewsController@checkOnly');
+
+});
+
