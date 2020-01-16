@@ -22,3 +22,12 @@ Route::prefix('admin')->group(function (){
     Route::get('main','AdminController@main');
 });
 
+
+Route::prefix('link')->group(function(){
+    Route::get('showadd','LinkController@showadd');
+    Route::post('do_add','LinkController@do_add');
+    Route::get('list','LinkController@list');
+    Route::get('del','LinkController@del');
+    Route::get('update','LinkController@update');
+    Route::post('do_update','LinkController@do_update');
+});
