@@ -15,12 +15,13 @@
 			<img class="headLogo" src="/static/admin/img/headLogo.png"/>
 		</div>
 		<div class="headR">
+			<!-- <a href="{{url('users/login')}}">登陆</a> -->
 			<p class="p1">
-				欢迎**登陆
+				欢迎<b style="color:red">{{session('admin')['admin_name']}}</b>登陆
 			</p>
 			<p class="p2">
-				<a href="#" class="resetPWD">重置密码</a>&nbsp;&nbsp;<a
-					href="#" class="goOut">退出</a>
+			<a href="{{url('/users/logout/')}}" 
+			target="_parent" style="color:black" class="goOut">退出</a>
 			</p>
 		</div>
 		<!-- onclick="{if(confirm(&quot;确定退出吗&quot;)){return true;}return false;}" -->
