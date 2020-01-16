@@ -51,13 +51,13 @@
 				<dd>
 					<img class="coin11" src="/static/admin/img/coin111.png" />
 					<img class="coin22" src="/static/admin/img/coin222.png" />
-					<a class="cks" href="" target="main">新闻添加</a>
+					<a class="cks" href="{{url('/news/create')}}" target="main">新闻添加</a>
 					<img class="icon5" src="/static/admin/img/coin21.png" />
 				</dd>
 				<dd>
 					<img class="coin11" src="/static/admin/img/coin111.png" />
 					<img class="coin22" src="/static/admin/img/coin222.png" />
-					<a class="cks" href="" target="main">新闻列表</a>
+					<a class="cks" href="{{url('/news/')}}" target="main">新闻列表</a>
 					<img class="icon5" src="/static/admin/img/coin21.png" />
 				</dd>
 			</dl>
