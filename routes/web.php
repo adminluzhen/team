@@ -22,3 +22,14 @@ Route::prefix('admin')->group(function (){
     Route::get('main','AdminController@main');
 });
 
+Route::prefix('cate')->group(function(){
+
+   Route::get('create','cateController@create');
+   Route::post('/store','cateController@store');
+   Route::get('/','cateController@index');
+   Route::get('destroy/{id}','cateController@destroy');
+
+   Route::get('edit/{id}','cateController@edit');
+   Route::post('update/{id}','cateController@update');
+  
+   });

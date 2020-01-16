@@ -30,13 +30,13 @@
 				<dd>
 					<img class="coin11" src="/static/admin/img/coin111.png" />
 					<img class="coin22"	src="/static/admin/img/coin222.png" />
-					<a class="cks" href="" target="main">分类管理</a>
+					<a class="cks" href="{{url('cate/create')}}" target="main">分类管理</a>
 					<img class="icon5" src="/static/admin/img/coin21.png" />
 				</dd>
 				<dd>
 						<img class="coin11" src="/static/admin/img/coin111.png" />
 						<img class="coin22"	src="/static/admin/img/coin222.png" />
-						<a class="cks" href="" target="main">分类列表</a>
+						<a class="cks" href="{{url('cate')}}" target="main">分类列表</a>
 						<img class="icon5" src="/static/admin/img/coin21.png" />
 				</dd>
 			</dl>
@@ -51,7 +51,7 @@
 				<dd>
 					<img class="coin11" src="/static/admin/img/coin111.png" />
 					<img class="coin22" src="/static/admin/img/coin222.png" />
-					<a class="cks" href="" target="main">新闻添加</a>
+					<a class="cks" href="#" target="main">新闻添加</a>
 					<img class="icon5" src="/static/admin/img/coin21.png" />
 				</dd>
 				<dd>
@@ -71,13 +71,13 @@
 				<dd>
 					<img class="coin11" src="/static/admin/img/coin111.png" />
 					<img class="coin22"	src="/static/admin/img/coin222.png" />
-					<a href="" target="main"	class="cks">管理员添加</a>
+					<a href="#" target="main"	class="cks">管理员添加</a>
 					<img class="icon5" src="/static/admin/img/coin21.png" />
 				</dd>
 				<dd>
 					<img class="coin11" src="/static/admin/img/coin111.png" />
 					<img class="coin22"	src="/static/admin/img/coin222.png" />
-					<a href="" target="main"	class="cks">管理员列表</a>
+					<a href="#" target="main"	class="cks">管理员列表</a>
 					<img class="icon5" src="/static/admin/img/coin21.png" />
 				</dd>
 			</dl>
