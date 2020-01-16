@@ -30,13 +30,13 @@
 				<dd>
 					<img class="coin11" src="/static/admin/img/coin111.png" />
 					<img class="coin22"	src="/static/admin/img/coin222.png" />
-					<a class="cks" href="" target="main">分类管理</a>
+					<a class="cks" href="{{url('cate/create')}}" target="main">分类管理</a>
 					<img class="icon5" src="/static/admin/img/coin21.png" />
 				</dd>
 				<dd>
 						<img class="coin11" src="/static/admin/img/coin111.png" />
 						<img class="coin22"	src="/static/admin/img/coin222.png" />
-						<a class="cks" href="" target="main">分类列表</a>
+						<a class="cks" href="{{url('cate')}}" target="main">分类列表</a>
 						<img class="icon5" src="/static/admin/img/coin21.png" />
 				</dd>
 			</dl>
@@ -51,7 +51,11 @@
 				<dd>
 					<img class="coin11" src="/static/admin/img/coin111.png" />
 					<img class="coin22" src="/static/admin/img/coin222.png" />
+<<<<<<< HEAD
 					<a class="cks" href="{{url('/news/create')}}" target="main">新闻添加</a>
+=======
+					<a class="cks" href="#" target="main">新闻添加</a>
+>>>>>>> 561e806ce6b83f8a23356ef9c9901399a7af7a19
 					<img class="icon5" src="/static/admin/img/coin21.png" />
 				</dd>
 				<dd>
@@ -71,13 +75,13 @@
 				<dd>
 					<img class="coin11" src="/static/admin/img/coin111.png" />
 					<img class="coin22"	src="/static/admin/img/coin222.png" />
-					<a href="" target="main"	class="cks">管理员添加</a>
+					<a href="#" target="main"	class="cks">管理员添加</a>
 					<img class="icon5" src="/static/admin/img/coin21.png" />
 				</dd>
 				<dd>
 					<img class="coin11" src="/static/admin/img/coin111.png" />
 					<img class="coin22"	src="/static/admin/img/coin222.png" />
-					<a href="" target="main"	class="cks">管理员列表</a>
+					<a href="#" target="main"	class="cks">管理员列表</a>
 					<img class="icon5" src="/static/admin/img/coin21.png" />
 				</dd>
 			</dl>
@@ -89,9 +93,16 @@
 						src="/static/admin/img/coin20.png" />
 				</dt>
 				<dd>
-					<img class="coin11" src="/static/admin/img/coin111.png" /><img class="coin22"
-						src="/static/admin/img/coin222.png" /><a href="../wish.html" target="main"
-						class="cks">心愿管理</a><img class="icon5" src="/static/admin/img/coin21.png" />
+					<img class="coin11" src="/static/admin/img/coin111.png" />
+					<img class="coin22"	src="/static/admin/img/coin222.png" />
+					<a href="{{url('link/showadd')}}" target="main" class="cks">添加友情链接</a>
+					<img class="icon5" src="/static/admin/img/coin21.png" />
+				</dd>
+				<dd>
+					<img class="coin11" src="/static/admin/img/coin111.png" />
+					<img class="coin22"	src="/static/admin/img/coin222.png" />
+					<a href="{{url('link/list')}}" target="main"	class="cks">链接列表</a>
+					<img class="icon5" src="/static/admin/img/coin21.png" />
 				</dd>
 			</dl>
 
