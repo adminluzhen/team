@@ -30,8 +30,7 @@
 		<label for="firstname" class="col-sm-2 control-label">是否显示</label>
 		<div class="col-sm-10">
 			<input type="radio" {{$data->c_show == 1 ? 'checked' : ''}} name="c_show" id="firstname" value="1">是
-			<input type="radio" {{$data->c_show == 1 ? 'checked' : ''}} name="c_show" id="firstname" value="2">
-否
+			<input type="radio" {{$data->c_show == 2 ? 'checked' : ''}} name="c_show" id="firstname" value="2">否
 		</div>
 	</div>
 	<div class="form-group">
