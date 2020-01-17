@@ -29,23 +29,23 @@
 	<div class="form-group">
 		<label for="firstname" class="col-sm-2 control-label">是否显示</label>
 		<div class="col-sm-10">
-			<input type="radio" name="c_show" id="firstname" value="1">是
-			<input type="radio" name="c_show" id="firstname" value="2">
+			<input type="radio" {{$data->c_show == 1 ? 'checked' : ''}} name="c_show" id="firstname" value="1">是
+			<input type="radio" {{$data->c_show == 1 ? 'checked' : ''}} name="c_show" id="firstname" value="2">
 否
 		</div>
 	</div>
 	<div class="form-group">
 		<label for="firstname" class="col-sm-2 control-label">是否导航栏</label>
 		<div class="col-sm-10">
-			<input type="radio" name="c_nav_show" id="firstname" value="1">是
-			<input type="radio" name="c_nav_show" id="firstname" value="2">否
+			<input type="radio" {{$data->c_nav_show == 1 ? 'checked' : ''}} name="c_nav_show" id="firstname" value="1">是
+			<input type="radio" {{$data->c_nav_show == 2 ? 'checked' : ''}} name="c_nav_show" id="firstname" value="2">否
 		</div>
 	</div>
 	<div class="form-group">
 		<label for="firstname" class="col-sm-2 control-label">添加人</label>
 		<div class="col-sm-10">
 			<input type="text" name="c_man" class="form-control" id="firstname"
-				   placeholder="请输入添加人" value="{{$data->c_name}}">
+				   placeholder="请输入添加人" value="{{$data->c_man}}">
 		</div>
 	</div>
 	</div>

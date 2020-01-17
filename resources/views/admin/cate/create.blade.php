@@ -20,7 +20,7 @@
 <form class="form-horizontal" role="form" action="{{url('cate/store')}}" method="post" enctype="multipart/form-data">
 @csrf
 	<div class="form-group">
-		<label for="firstname" class="col-sm-2 control-label">新闻名称</label>
+		<label for="firstname" class="col-sm-2 control-label">分类名称</label>
 		<div class="col-sm-10">
 			<input type="text" name="c_name" class="form-control" id="firstname"
 				   placeholder="请输入分类名称">
@@ -29,7 +29,7 @@
 	<div class="form-group">
 		<label for="firstname" class="col-sm-2 control-label">是否显示</label>
 		<div class="col-sm-10">
-			<input type="radio" name="c_show" id="firstname" value="1">是
+			<input type="radio" checked name="c_show" id="firstname" value="1">是
 			<input type="radio" name="c_show" id="firstname" value="2">否
 
 		</div>
@@ -37,7 +37,7 @@
 	<div class="form-group">
 		<label for="firstname" class="col-sm-2 control-label">是否导航栏</label>
 		<div class="col-sm-10">
-			<input type="radio" name="c_nav_show" id="firstname" value="1">是
+			<input type="radio" checked name="c_nav_show" id="firstname" value="1">是
 			<input type="radio" name="c_nav_show" id="firstname" value="2">否
 		</div>
 	</div>

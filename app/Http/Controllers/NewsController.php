@@ -19,9 +19,7 @@ class NewsController extends Controller
         $word =request()->n_title??'';
         $n_content =request()->n_content??'';
         $page =request()->page;
-        $data =redis::get('data_'.$page.'_'. $word.'_'.$n_content);
-        if(!$data){
-            echo "走DB";
+        
                 $where= [];
                 if($word){
                     $where[]=['n_title','like',"%$word%"];
@@ -37,9 +35,8 @@ class NewsController extends Controller
                     ->orderBy('n_id', 'desc')
                     ->paginate( $pageSize);
                  $data = serialize($data);
-              Redis::setex('data_'.$page.'_'. $word.'_'.$n_content,20,$data);
 
-        }
+        
         $data =unserialize($data);
 
         $query=request()->all();
