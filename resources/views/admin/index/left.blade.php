@@ -13,7 +13,7 @@
 	<div class="container">
 
 		<div class="leftsidebar_box">
-			<a href="main.html" target="main"><div class="line">
+			<a href="{{url('admin/main')}}" target="main"><div class="line">
 					<img src="/static/admin/img/coin01.png" />&nbsp;&nbsp;首页
 				</div></a>
 			<!-- <dl class="system_log">
@@ -78,7 +78,7 @@
 				<dd>
 					<img class="coin11" src="/static/admin/img/coin111.png" />
 					<img class="coin22"	src="/static/admin/img/coin222.png" />
-					<a href="#" target="main"	class="cks">管理员列表</a>
+					<a href="{{url('users/create')}}" target="main"	class="cks">管理员列表</a>
 
 					<a href="{{url('/users')}}" target="main"	class="cks">管理员列表</a>
 
